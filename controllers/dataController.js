@@ -11,10 +11,10 @@ const processData = (req, res) => {
         let highestLowercase = '';
 
         data.forEach(item => {
-            if (!isNaN(item) && item !== '') {  // Check for numbers including integers and floats
+            if (!isNaN(item) && item !== '') {  
                 numbers.push(item);
                 console.log(`Added to numbers: ${item}`);
-            } else if (/^[a-zA-Z]$/.test(item)) {  // Check for single character alphabets
+            } else if (/^[a-zA-Z]$/.test(item)) {  
                 alphabets.push(item);
                 console.log(`Added to alphabets: ${item}`);
                 if (item === item.toLowerCase() && item > highestLowercase) {
@@ -26,9 +26,9 @@ const processData = (req, res) => {
 
         const response = {
             is_success: true,
-            user_id: "john_doe_17091999",  // Replace with dynamic logic if needed
-            email: "john@xyz.com",  // Replace with your actual email
-            roll_number: "ABCD123",  // Replace with your actual roll number
+            user_id: "pavan_21BCE9992",  
+            email: "pavansriramkurukuri3@gmail.com", 
+            roll_number: "21BCE9992",  
             numbers: numbers,
             alphabets: alphabets,
             highest_lowercase_alphabet: highestLowercase ? [highestLowercase] : []
